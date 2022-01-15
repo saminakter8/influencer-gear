@@ -1,3 +1,23 @@
+/* -----------------
+        Media Quaries 
+--------------------*/
+/* -------------
+        Mobile
+------------- */
+{
+    box-sizing:border-box;
+}
+@media only screen and  (max-width:688px){
+    .group, .blogs, footer{
+        width:100%;
+        
+    }
+    .container, .products, footer{
+        flex-direction:row;
+        grid-template-columns:repeat(1,1fr);
+    }
+    
+}
 /* font */
 @
 import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
@@ -10,22 +30,32 @@ import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=sw
 body{
     font-family:font-family: 'Poppins', sans-serif;
     background-color:white;
-    margin:6%;
-}
-/* Influencer */
+    margin:6%; 
+} 
+    
 .container{
      margin-top:30px;
      display:flex;
     
 }
 
+
+/* Header styles */
 .header{
     font-size: 24px;
+    
 }
+
+/* ---------------
+        body
+-------------- */
 .half-width{
     width:60%;
-    padding-left:50px;
     
+}
+.camera:hover{
+    transform:scale(1.3);
+    transition:transform 3s ease-in-out;
 }
 .half-width h1{
     
@@ -52,6 +82,65 @@ small{
 i{
     padding-left:10px;
 }
+/*----------
+    Blogs
+--------- */
+h2{
+    text-align:center;
+}
+.blogs{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+}
+.products{
+    background-color:rgb(245, 241, 245); 
+    box-shadow:5px 5px 7px rgb(59, 58, 58);
+    border-image-slice:2;
+    padding: 30px;
+    margin:15px;
+    border-radius:5px; 
+    
+}
+.product{
+    width:300px;
+    Height:256px;
+    
+}
+.product-details{
+    
+}
+#price{
+    color:rgb(49, 47, 47);
+    font-weight:2px;
+    padding-left:0;
+}
+.fa-star{
+    font-size:12px;
+}
+.fa-star.filled{
+    color:#FFC014;
+}
+.fa-star.empty{
+    color:rgb(116, 112, 112);
+}
+span{
+    color:rgb(158, 154, 154);
+}
+.more{
+    color:rgb(245, 87, 113);
+    text-decoration:none;
+    position:absolute;
+    left:1166px;
+}
+.more:hover{
+    transform: scale(1.3);
+    transition:transform 2s ease-in-out;
+}
+
+/* -----------------
+    footer styles 
+    -----------------*/
+
 .footer{
     background-color:rgb(1, 1, 31);
     color:white;
@@ -63,6 +152,30 @@ i{
 .icon{
     color:white;
 }
+ 
 
 
 
+@media only screen and (max-width:688px) {
+    .container{
+        width:100%;
+    }
+    .players, .blogs, .courses{
+        
+        grid-template-columns:repeat(1, 1fr);
+
+    }
+    .player, .blog, .course{
+        flex-direction:column;
+    }
+}    
+   
+ Tablet devices
+@media only screen and (min-width:688px)and (max-width:992px){
+    .container{
+        width:100%;
+    }
+    .players, .courses{
+        grid-template-columns:repeat(2,1fr);
+    } */
+} 
