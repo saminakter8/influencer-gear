@@ -7,13 +7,13 @@
 {
     box-sizing:border-box;
 }
-@media only screen and  (max-width:688px){
+@media only screen and  (max-width:992px){
     .group, .blogs, footer{
         width:100%;
         
     }
     .container, .products, footer{
-        flex-direction:row;
+        flex-direction:column;
         grid-template-columns:repeat(1,1fr);
     }
     
