@@ -5,6 +5,7 @@ import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=sw
 /* Common or Utilities */
 .group{
     margin-top:65px;
+    
 }
 body{
     font-family:font-family: 'Poppins', sans-serif;
@@ -13,10 +14,11 @@ body{
 }
 /* Influencer */
 .container{
-    margin-top:30px;;
-    display:flex;
+     margin-top:30px;
+     display:flex;
     
 }
+
 .header{
     font-size: 24px;
 }
@@ -45,8 +47,22 @@ small{
     border-radius:41px;
     text-decoration:none;
     color:white;
+    
 } 
 i{
     padding-left:10px;
 }
+.footer{
+    background-color:rgb(1, 1, 31);
+    color:white;
+    text-align: center;
+    padding:2px 0 25px 0;
+
+
+}
+.icon{
+    color:white;
+}
+
+
 
